@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>Weather</title>
+</head>
+
+<body onload="moveRelogio()">
+    <main>
+        <div class="search-form">
+            <p>Digite sua cidade<p>
+            <div class="ipt-div"><input type="text" placeholder=" Sua Cidade" id="input"><button type="submit" id="butInput"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+        </div>
+
+        <div class="container-horario">
+            <p id="horas">23</p><span class="blinking">:</span>
+            <p id="minutos">43</p><span class="blinking">:</span>
+            <p id="segundos">07</p>
+        </div>
+
+        <div class="data-container">
+            <div class="dia-container">
+                <p id="dia-escrito">QUA</p>
+            </div>
+
+            <div class="data">
+                <p id="data-">21/10/2023</p>
+                
+            </div>
+        </div>
+
+        <div class="container-details">
+            <div id="container-loc ">
+                <p id="loc" class="hide">Não Definido</p>
+            </div>
+
+            <div class="container-details2">
+                <div class="temp-container"><i class="termo fa-solid fa-temperature-three-quarters"></i>
+                    <p class="temp hide">Escolha Uma Cidade</p>
+                </div>
+                <div class="umidyty-container"><i class="drip fa-solid fa-droplet"></i>
+                    <p class="umidity hide">Escolha Uma Cidade</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

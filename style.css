@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(116, 104, 251) 0%, rgb(72, 76, 155) 100%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    background: linear-gradient(-45deg, #4e4e4e, #434343);
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 9px 22px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 7px 9px 22px 4px rgba(0, 0, 0, 0.35);
+    width: 25vw;
+    height: 35vh;
+
+}
+
+.container-horario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+
+}
+
+.dia-container {
+    text-align: center;
+
+}
+
+.data {
+    display: flex;
+    text-align: center;
+
+
+}
+
+.container-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1;
+}
+
+#container-loc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-details2 {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 0px;
+}
+
+.umidyty-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.temp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #fdfdfd;
+}
+
+#dia-escrito {
+    font-weight: 300;
+}
+
+.drip {
+    color: #4c88ff;
+}
+
+.termo {
+    color: #f6e41a;
+}
+
+span {
+    color: white;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinking {
+    animation: blink 1s step-start infinite;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.search-form {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+}
+
+.ipt-div {
+    display: flex;
+    gap: 5px;
+}
+
+#input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.hide {
+    display: none;
+}
